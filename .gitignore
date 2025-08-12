@@ -26,7 +26,6 @@ yarn-error.log*
 # Internal files: 
 virtual/
 DATASET/
-uploads/
 .firebase/
 backend/Admin/node_modules
 DATASET.zip
