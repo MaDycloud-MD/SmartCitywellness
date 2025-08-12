@@ -17,7 +17,7 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ./uploads:/app/uploads
+      - ./backend/uploads:/app/uploads
     environment:
       - MONGO_URI=mongodb://mongo:27017/smartcity
     depends_on:
