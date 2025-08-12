@@ -139,7 +139,7 @@ const ReportIssue = () => {
         formData.append('audio', audioBlob, 'voice-message.wav'); 
       }
 
-      const response = await fetch('http://localhost:5000/api/reports/report', {
+      const response = await fetch('http://52.66.217.31:5000/api/reports/report', {
         method: 'POST',
         body: formData,
       });

@@ -1,0 +1,50 @@
+version: "3.9"
+
+services:
+  frontend:
+    build: .
+    container_name: smartcity-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - smartcity
+
+  backend:
+    build: ./backend
+    container_name: smartcity-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/smartcity
+    depends_on:
+      - mongo
+      - ml-model
+    networks:
+      - smartcity
+
+  ml-model:
+    build: ./ml-model
+    container_name: smartcity-ml
+    ports:
+      - "5001:5001"
+    networks:
+      - smartcity
+
+  mongo:
+    image: mongo:6
+    container_name: smartcity-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - smartcity
+
+networks:
+  smartcity:
+    driver: bridge
+
+volumes:
+  mongo-data:
