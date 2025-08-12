@@ -29,3 +29,4 @@ DATASET/
 .firebase/
 backend/Admin/node_modules
 DATASET.zip
+./backend/Admin/serviceAccountKey.json
