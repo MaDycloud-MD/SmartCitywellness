@@ -26,8 +26,7 @@ app.get('/', (req, res) => {
   res.send('Backend is running. Try POSTing to /api/reports');
 });
 
-// Start server
-const PORT = 5000;
+const API_URL = process.env.REACT_APP_API_URL;
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Server running at ${API_URL}`);
 });

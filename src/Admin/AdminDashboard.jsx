@@ -40,14 +40,16 @@ const AdminDashboard = () => {
   const fetchAllData = async (user) => {
     try {
       const token = await user.getIdToken();
+      const baseUrl = process.env.REACT_APP_API_URL;
+
       const [feedback, complaints, reports] = await Promise.all([
-        axios.get("http://localhost:5000/api/admin/feedback", {
+        axios.get(`${baseUrl}/api/admin/feedback`, {
           headers: { Authorization: `Bearer ${token}` },
         }),
-        axios.get("http://localhost:5000/api/admin/complaints", {
+        axios.get(`${baseUrl}/api/admin/complaints`, {
           headers: { Authorization: `Bearer ${token}` },
         }),
-        axios.get("http://localhost:5000/api/admin/reports", {
+        axios.get(`${baseUrl}/api/admin/reports`, {
           headers: { Authorization: `Bearer ${token}` },
         }),
       ]);

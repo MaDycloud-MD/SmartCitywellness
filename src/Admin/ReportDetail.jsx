@@ -8,6 +8,7 @@ import "../styles/Styles/reportDetail.css"; // Updated style
 
 // config.js
 export const BASE_URL = "http://localhost:5000";
+const baseUrl = process.env.REACT_APP_API_URL;
 
 const ReportDetail = () => {
   const { reportId } = useParams();
@@ -25,7 +26,7 @@ const ReportDetail = () => {
 
       const token = await user.getIdToken();
       try {
-        const res = await axios.get(`http://localhost:5000/api/admin/reports/${reportId}`, {
+        const res = await axios.get(`${baseUrl}/api/admin/reports/${reportId}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setReport(res.data);
