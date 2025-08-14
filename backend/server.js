@@ -27,6 +27,7 @@ app.get('/', (req, res) => {
 });
 
 const API_URL = process.env.REACT_APP_API_URL;
+const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server running at ${API_URL}`);
 });
