@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { getAuth } from "firebase/auth";
-import { ArrowLeft } from 'lucide-react'; // Optional icon
-import "../styles/Styles/reportDetail.css"; // Updated style
+import { ArrowLeft } from 'lucide-react';
+import "../styles/Styles/reportDetail.css"; 
 
 const baseUrl = process.env.REACT_APP_API_URL;
 
