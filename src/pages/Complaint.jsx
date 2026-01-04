@@ -36,8 +36,10 @@ const Complaint = () => {
       description
     };
 
+    const baseUrl = process.env.REACT_APP_API_URL;
+    
     try {
-      const response = await fetch('http://localhost:5000/api/complaints/complaint', {
+      const response = await fetch(`${baseUrl}/api/complaints/complaint`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

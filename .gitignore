@@ -13,10 +13,6 @@
 
 # misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 npm-debug.log*
 yarn-debug.log*
@@ -26,7 +22,7 @@ yarn-error.log*
 # Internal files: 
 virtual/
 DATASET/
-uploads/
 .firebase/
 backend/Admin/node_modules
 DATASET.zip
+./backend/Admin/serviceAccountKey.json

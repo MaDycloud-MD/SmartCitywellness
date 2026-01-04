@@ -2,12 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { getAuth } from "firebase/auth";
-import { ArrowLeft } from 'lucide-react'; // Optional icon
-import "../styles/Styles/reportDetail.css"; // Updated style
+import { ArrowLeft } from 'lucide-react';
+import "../styles/Styles/reportDetail.css"; 
 
-
-// config.js
-export const BASE_URL = "http://localhost:5000";
+const baseUrl = process.env.REACT_APP_API_URL;
 
 const ReportDetail = () => {
   const { reportId } = useParams();
@@ -25,7 +23,7 @@ const ReportDetail = () => {
 
       const token = await user.getIdToken();
       try {
-        const res = await axios.get(`http://localhost:5000/api/admin/reports/${reportId}`, {
+        const res = await axios.get(`${baseUrl}/api/admin/reports/${reportId}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setReport(res.data);
@@ -80,7 +78,7 @@ const ReportDetail = () => {
           <div className="image-section">
             <strong>Submitted Image:</strong>
             <img
-                src={`${BASE_URL}/${report.imagePath}`}
+                src={`${baseUrl}/${report.imagePath}`}
                 alt="Report Visual"
                 className="report-img"
               />
@@ -91,7 +89,7 @@ const ReportDetail = () => {
             <div className="audio-section">
               <strong>Submitted Audio:</strong>
               <audio controls className="report-audio">
-                <source src={`${BASE_URL}/${report.audioPath}`} type="audio/mpeg" />
+                <source src={`${baseUrl}/${report.audioPath}`} type="audio/mpeg" />
                 Your browser does not support the audio element.
               </audio>
             </div>

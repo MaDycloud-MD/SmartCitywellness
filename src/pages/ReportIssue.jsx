@@ -21,6 +21,7 @@ const ReportIssue = () => {
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
   const navigate = useNavigate();
+  const baseUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     return () => {
@@ -139,7 +140,7 @@ const ReportIssue = () => {
         formData.append('audio', audioBlob, 'voice-message.wav'); 
       }
 
-      const response = await fetch('http://localhost:5000/api/reports/report', {
+      const response = await fetch(`${baseUrl}/api/reports/report`, {
         method: 'POST',
         body: formData,
       });

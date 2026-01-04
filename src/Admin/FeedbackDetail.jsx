@@ -20,8 +20,9 @@ const FeedbackDetail = () => {
       }
 
       const token = await user.getIdToken();
+      const baseUrl = process.env.REACT_APP_API_URL;
       try {
-        const res = await axios.get(`http://localhost:5000/api/admin/feedback/${feedbackId}`, {
+        const res = await axios.get(`${baseUrl}/api/admin/feedback/${feedbackId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
