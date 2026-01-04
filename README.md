@@ -39,7 +39,7 @@ A full-stack smart city web application that enables citizens to report waste-re
 ### Signup
 ![signup](screenshots/signup.png)
 
-### 📝 Waste Report Form
+### Waste Report Form
 ![Report Form](screenshots/report.png)
 
 #### Preview
@@ -151,9 +151,9 @@ SmartCitywellness/
 
 ## Authors
 
-- [Tasneem Gokak] -> https://github.com/Tasneemgokak  
-- [Musaddiqua Rajannavar] -> https://github.com/Musaddiqua
-- [Mohammed Shoaib M] -> https://github.com/MaDycloud-MD
+- Tasneem Gokak -> https://github.com/Tasneemgokak  
+- Musaddiqua Rajannavar -> https://github.com/Musaddiqua
+- Mohammed Shoaib M -> https://github.com/MaDycloud-MD
 
 ---
 
