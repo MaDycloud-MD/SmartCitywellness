@@ -5,19 +5,19 @@ A full-stack smart city web application that enables citizens to report waste-re
 
 ---
 
-## 🚀 Features
+## Features
 
-- 📸 **Waste Reporting** — Citizens can report waste with image uploads, live GPS location, and optional voice messages.
-- 🧠 **AI Waste Classification** — Integrated a TensorFlow CNN model to classify waste into Organic, Metal, or Glass and assign severity (Low/Medium/High).
-- 🔐 **Authentication** — Secure Google login for users and role-based access for admins via Firebase Authentication.
-- 📊 **Admin Dashboard** — Real-time dashboard to monitor complaints, reports, feedback, and assign cleanup actions.
-- 💬 **Feedback & Complaints** — Supports rating, image comparisons, and escalations if issues are not resolved.
-- 🌐 **Geolocation + Voice** — Captures location coordinates and allows audio input for richer reporting.
-- 📈 **Analytics** — Predictive insights using historical data to help authorities optimize waste collection schedules.
+- **Waste Reporting** — Citizens can report waste with image uploads, live GPS location, and optional voice messages.
+- **AI Waste Classification** — Integrated a TensorFlow CNN model to classify waste into Organic, Metal, or Glass and assign severity (Low/Medium/High).
+- **Authentication** — Secure Google login for users and role-based access for admins via Firebase Authentication.
+- **Admin Dashboard** — Real-time dashboard to monitor complaints, reports, feedback, and assign cleanup actions.
+- **Feedback & Complaints** — Supports rating, image comparisons, and escalations if issues are not resolved.
+- **Geolocation + Voice** — Captures location coordinates and allows audio input for richer reporting.
+- **Analytics** — Predictive insights using historical data to help authorities optimize waste collection schedules.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer       | Technology Used                          |
 |-------------|-------------------------------------------|
@@ -31,7 +31,7 @@ A full-stack smart city web application that enables citizens to report waste-re
 
 ---
 
-## 📷 Screenshots
+## Screenshots
 
 ### Login
 ![login](screenshots/login.png)
@@ -39,7 +39,7 @@ A full-stack smart city web application that enables citizens to report waste-re
 ### Signup
 ![signup](screenshots/signup.png)
 
-### 📝 Waste Report Form
+### Waste Report Form
 ![Report Form](screenshots/report.png)
 
 #### Preview
@@ -48,13 +48,13 @@ A full-stack smart city web application that enables citizens to report waste-re
 ### Complaint 
 ![Complaint Form](screenshots/complaint.png)
 
-### 🌟 Feedback Form with Ratings
+### Feedback Form with Ratings
 ![Feedback Form](screenshots/feedback.png)
 
-### 🖥️ Admin Login
+### Admin Login
 ![Admin Login](screenshots/admin_login.png)
 
-### 🖥️ Admin Dashboard
+### Admin Dashboard
 ![Admin Dashboard](screenshots/admin_dashboard.png)
 
 ### Admin Report 
@@ -63,7 +63,7 @@ A full-stack smart city web application that enables citizens to report waste-re
 ### Admin Complaint 
 ![Admin Complaint](screenshots/admin_complaint.png)
 
-### 🌟 Admin Feedback 
+### Admin Feedback 
 ![Admin Feedback ](screenshots/admin_feedback.png)
 
 ### Production servers
@@ -73,13 +73,13 @@ A full-stack smart city web application that enables citizens to report waste-re
 ![Training mode](screenshots/Picture2.png)
 ![Training mode](screenshots/Picture3.png)
 
-### 🧠 AI Prediction Result
+### AI Prediction Result
 ![AI Prediction](screenshots/Predication_Terminal.png)
 ---
 
-## 📦 Installation
+## Installation
 
-### 🔧 Prerequisites
+### Prerequisites
 
 - Node.js (v18+)
 - Python (v3.8+)
@@ -87,7 +87,7 @@ A full-stack smart city web application that enables citizens to report waste-re
 - Firebase account
 - Git
 
-### 🖥️ Backend Setup (Node + Flask)
+### Backend Setup (Node + Flask)
 
 1. Clone the repository:
    ```bash
@@ -108,7 +108,7 @@ A full-stack smart city web application that enables citizens to report waste-re
    node server.js
    ```
 
-### 🌐 Frontend Setup
+### Frontend Setup
 
 ```bash
 cd frontend
@@ -118,12 +118,12 @@ npm start
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 SmartCitywellness/
 │
-├── frontend/              # React UI with reporting, feedback, admin panel
+├── frontend/              # React UI with reporting, feedback, and admin panel
 ├── backend/               # Node.js + Express REST API
 ├── ml-model/              # Flask server with ML model (TensorFlow)
 └── README.md              # Project documentation
@@ -131,7 +131,7 @@ SmartCitywellness/
 
 ---
 
-## 🧠 AI Model
+## AI Model
 
 - Built using TensorFlow + Keras
 - Convolutional Neural Network (CNN)
@@ -140,7 +140,7 @@ SmartCitywellness/
 
 ---
 
-## ✅ Testing
+## Testing
 
 - Unit Testing (React Components, API routes, AI model)
 - Integration Testing (Frontend ↔ Backend ↔ ML)
@@ -149,13 +149,13 @@ SmartCitywellness/
 
 ---
 
-## 👨‍💻 Authors
+## Authors
 
-- [Tasneem Gokak] -> https://github.com/Tasneemgokak  
-- [Musaddiqua rajannavar] -> https://github.com/Musaddiqua
-- [Mohammed Shoaib M] -> https://github.com/MaDycloud-MD
+- Tasneem Gokak -> https://github.com/Tasneemgokak  
+- Musaddiqua Rajannavar -> https://github.com/Musaddiqua
+- Mohammed Shoaib M -> https://github.com/MaDycloud-MD
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 - Inspiration: Smart Cities Mission, India
